@@ -1,0 +1,8 @@
+
+
+
+
+
+Para o correto funcionamento é necessário ter um banco de dados criado.
+Neste projeto o banco chama-se devWeb e tem como senha pipoca123. Caso deseje 
+alterar estas informações, modifique o arquivo:models/db.js
