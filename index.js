@@ -18,6 +18,9 @@ const Contato = require('./models/Contato')
 
 
 
+    // Carrega os itens estáticos
+    app.use(express.static('Public'));
+
     //Rotas
     app.get('/cadastrarPost', function(req,res){
         res.render('formularioPosts') /* O parametro "formularioPosts" é o nome do arquivo que criei na pasta views */
@@ -29,6 +32,16 @@ const Contato = require('./models/Contato')
 
     /* Recupera a informação do banco ordenando do mais recente para o mais antigo */
     app.get('/', function(req,res){ 
+        /*Post.findAll({order:[['id','Desc']]}).then(function(posts){
+            res.render('home',{posts:posts})
+        }).catch(function(erro){
+            res.send("Houve um erro: " + erro)
+        }) */
+        res.render('home')
+    })
+
+    /* Recupera a informação do banco ordenando do mais recente para o mais antigo */
+    app.get('/sobre', function(req,res){ 
         Post.findAll({order:[['id','Desc']]}).then(function(posts){
             res.render('sobre',{posts:posts})
         }).catch(function(erro){
