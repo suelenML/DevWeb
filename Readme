@@ -1,8 +1,9 @@
+Esse projeto é referente ao projeto final realizado durante a Capacitação Interna de Desenvolvimento WEB do Meninas Digitais - Regional Bahia. Lembrando que, não se trata de um site oficial do grupo meninas digitais, trata-se apenas de um projeto final que será realizado em uma capacitação interna(restrita para membras) do Meninas Digitais - Regional Bahia.
+
+O projeto foi realizado considerando as seguintes tecnologias:
+- HTML, CSS, Node.js, express, handlebars e mySql.
 
 
-
-
-
-Para o correto funcionamento é necessário ter um banco de dados criado.
+Para o correto funcionamento é necessário ter um banco de dados MySql criado.
 Neste projeto o banco chama-se devWeb e tem como senha pipoca123. Caso deseje 
 alterar estas informações, modifique o arquivo:models/db.js
